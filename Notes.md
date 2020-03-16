@@ -56,3 +56,17 @@ for i, card := range cards {
     fmt.Println(i, card)
 }
 ```
+
+## Receiver function
+
+```
+func (d deck) print() {
+
+}
+```
+
+d = the vorking variable / the actual copy of the deck we are working with is available as a variable called 'd'. In Python, the equivalent of 'd' is self. 
+
+This receiver function is of type 'deck' and the function name is deck. Receiver sets up methods on variables that we create.
+
+Any variable of type 'deck' now gets access to the 'print' method. 
