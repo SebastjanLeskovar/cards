@@ -70,3 +70,37 @@ d = the vorking variable / the actual copy of the deck we are working with is av
 This receiver function is of type 'deck' and the function name is deck. Receiver sets up methods on variables that we create.
 
 Any variable of type 'deck' now gets access to the 'print' method. 
+
+## Slice range syntax
+
+fruits = ["apple", "banana", "grape", "orange"]
+
+fruits[StartIndexIncluding: upToNotIncluding]
+
+fruits[0:2] = ["apple", "banana"]
+
+## Multiple return values
+
+func deal(d deck, handSize int) (deck, deck) {
+	return d[:handSize], d[handSize:]
+}
+
+## Byte slices
+
+Library ioutil enables us to write files to drive and load them.
+
+`func WriteFile(filename string, data []byte, perm os.FileMode) error`
+
+Function WriteFile is used to create or write to a new or existing file on local hard drive.
+
+### Byte slice
+
+"Hi there!" => string
+
+[72 105 32 116 104 101 114 101 33] => byte slice
+
+## Type conversion
+
+[]byte("Hi there!")
+
+Here, we turn the string "Hi there!" into a bite slice. 
