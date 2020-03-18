@@ -104,3 +104,8 @@ Function WriteFile is used to create or write to a new or existing file on local
 []byte("Hi there!")
 
 Here, we turn the string "Hi there!" into a bite slice. 
+
+## Tests
+
+Tests are written in files named <filename>_test.go. 
+
